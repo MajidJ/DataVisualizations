@@ -1,0 +1,5 @@
+@import "styles/_colors.scss";
+
+.button {
+    @include alpha-attribute('background-color', rgba(black, 0.5), white);
+};

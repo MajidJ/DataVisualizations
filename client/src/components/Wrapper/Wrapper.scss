@@ -1,0 +1,21 @@
+@import 'styles/_screen_sizes.scss';
+
+.container {
+    margin: 0 auto;
+    @include respond-to(xs-screens) {
+        width: 95% ;
+    }
+    @include respond-to(sm-screens) {
+        width: 540px;
+    }
+    @include respond-to(medium-screens) {
+        width: 720px;
+    }
+    @include respond-to(large-screens) {
+        width: 960px;
+    }
+    @include respond-to(extra-large-screens) {
+        width: 1140px;
+    }
+  }
+

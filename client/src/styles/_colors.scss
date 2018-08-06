@@ -1,0 +1,17 @@
+$primary: #2b89fe;
+$warning: #ffb50f;
+$error: #fc4e4f;
+$success: #8ccc39;
+$light: #f9f9f9;
+$gray: #eaeaea;
+$dark: #3b3d40;
+$green-blue: #48e68e;
+$green-yellow: #dcf43b;
+
+@mixin alpha-attribute($attribute, $color, $background) {
+    $percent: alpha($color) * 100%;
+    $opaque: opacify($color, 1);
+    $solid-color: mix($opaque, $background, $percent);
+    #{$attribute}: $solid-color;
+    #{$attribute}: $color;
+}
